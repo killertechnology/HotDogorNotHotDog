@@ -39141,3 +39141,5 @@ hotdog-react-app/node_modules/yocto-queue/license
 hotdog-react-app/node_modules/yocto-queue/package.json
 hotdog-react-app/node_modules/yocto-queue/readme.md
 hotdog-react-app/src/.DS_Store
+hotdog-node-api/.env
+hotdog-react-app/.env
