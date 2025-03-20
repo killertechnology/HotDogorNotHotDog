@@ -1,0 +1,169 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+
+}
+
+.my-4-img {
+    width: 280px;
+    padding: 2px;
+    z-index: 99;
+    position: fixed;
+}
+
+h1 {
+    line-height: 10pt;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+    text-shadow: 3px 3px 3px black;
+}
+
+.bubbly-button {
+    background: linear-gradient(to right, #68d391, #48bb78); /* green gradient */
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 9999px; /* fully rounded */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+    font-size: 16px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  }
+  
+  .bubbly-button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15), 0 3px 6px rgba(0, 0, 0, 0.12);
+  }
+
+  
+body {
+    background-image: url('images/newcircus.gif'); 
+    background-size: 130%;
+    background-repeat: no-repeat;
+    background-position: -65px -120px;
+    background-color: #f2e663;
+}
+
+.hotdogpage {
+    text-align: center;
+    width: 100%;
+    padding-top: 193px;
+}
+
+.myroot {
+   
+}
+
+.mythumbs {
+    width: 80px;
+    padding: 2px;
+}
+
+.my-4-selected {
+    width: 100%;
+    text-align: center;
+}
+
+.my-4 {
+    width: 400px;
+    text-align: center;
+}
+
+.result-hotdog {
+    font-size: 34pt;
+    font-weight: bolder;
+    position: fixed;
+    top: 120px;
+    color: rgb(1, 184, 59);
+    text-shadow: 2px 2px 2px black;
+}
+
+.result-nothotdog {
+    font-size: 30pt;
+    font-weight: bolder;
+    position: fixed;
+    top: 134px;
+    width: 250px;
+    color: rgb(255, 2, 2);
+    text-shadow: 2px 2px 2px black;
+}
+
+input {
+    font-size: 10pt;
+    font-weight: bolder;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 2px black;
+}
+
+.hotdogsheet {
+    text-align: center;
+    padding: 0px;
+    width: 350px;
+}
+
+/* Container to hold the primary image and overlay */
+.container {
+    position: relative;
+    height: 69px;
+    margin: 0px auto; /* centers the container on the page */
+    border: 0px solid #ccc;
+}
+/* The primary image */
+.primary-image {
+    width: 350px;
+}
+/* The overlay div */
+.overlay {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+    pointer-events: none; /* allows clicks to pass through to the image */
+}
+/* Ensure the checkmark image fills its container */
+.overlay img {
+    width: 30%;
+}
+
+.overlay div {
+    width: 100%;
+}
+
+/* Desktop background transparency adjustment */
+@media (min-width: 650px) {
+  /* Remove the regular background from body */
+  body {
+    background: none;
+  }
+  /* Add a pseudo-element with the background at 60% transparency */
+  body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('images/newcircus.gif') no-repeat center center, #f2e663;
+    background-size: 130%;
+    background-position: -165px -250px;
+    opacity: 0.8;
+    z-index: -1;
+  }
+}
+
+.centered-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(55, 65, 81, 0.5); /* equivalent to bg-gray-700 bg-opacity-50 */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 50;
+  }
+  
